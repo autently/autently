@@ -1,0 +1,79 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+h1 {
+    font-family: 'Koulen', cursive;
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0;
+    /* color: #ff0030; */
+    /* color: #009fff; */
+    /* color: #24ddcc; */
+    color: #24dd86;
+    /* color: #24dd41; */
+}
+
+.center {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* background-color: #edfdf5; */
+}
+
+.coming-soon {
+    display: block;
+    font-family: helvetica;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    /* background-color: #52FC050F; */
+    color: #17B56A;
+    padding: 7px 10px 6px 9px;
+}
+
+.social-media-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    margin-top: 2rem;
+}
+
+.social-media-list li {
+    display: inline-block;
+}
+
+.social-media-list a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: #defaf4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+.social-media-list svg {
+    height: 20px;
+    width: 20px;
+}
+
+.twitter {
+    /* color: #2fbdc4; */
+    color: #24ddb2;
+}
+
+@media only screen and (min-width: 600px) {
+    h1 {
+        font-size: 70px;
+        line-height: 70px;
+    }
+}
