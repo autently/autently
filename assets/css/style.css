@@ -1,3 +1,9 @@
+:root {
+    --color-logo: #24dd86;
+    --color-badge-text: #0abf53;
+    --color-badge-bg:rgb(225, 247, 234);
+}
+
 html,
 body {
     margin: 0;
@@ -14,7 +20,7 @@ h1 {
     /* color: #ff0030; */
     /* color: #009fff; */
     /* color: #24ddcc; */
-    color: #24dd86;
+    color: var(--color-logo)
     /* color: #24dd41; */
 }
 
@@ -35,7 +41,7 @@ h1 {
     text-transform: uppercase;
     letter-spacing: 0.1rem;
     /* background-color: #52FC050F; */
-    color: #17B56A;
+    color: var(--color-badge-text);
     padding: 7px 10px 6px 9px;
 }
 
