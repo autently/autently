@@ -2,6 +2,7 @@
     --color-logo: #24dd86;
     --color-badge-text: #17B56A;
     --color-badge-bg:rgb(225, 247, 234);
+    --color-twitter: #24ddb2;
 }
 
 html,
@@ -73,8 +74,11 @@ h1 {
 }
 
 .twitter {
-    /* color: #2fbdc4; */
-    color: #24ddb2;
+    color: var(--color-twitter);
+}
+
+.instagram {
+    color: var(--color-twitter);
 }
 
 @media only screen and (min-width: 600px) {
