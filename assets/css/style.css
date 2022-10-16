@@ -1,8 +1,9 @@
 :root {
-    --color-logo: #24dd86;
+    /* --color-logo: #24dd86; */
+    --color-logo: #1ed660;
     --color-badge-text: #17B56A;
     --color-badge-bg:rgb(225, 247, 234);
-    --color-twitter: #24ddb2;
+    --color-twitter: #17B56A;
 }
 
 html,
