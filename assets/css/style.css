@@ -27,6 +27,13 @@ h1 {
 }
 
 .center {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
     height: 100%;
     width: 100%;
     display: flex;
@@ -86,5 +93,49 @@ h1 {
     h1 {
         font-size: 70px;
         line-height: 70px;
+    }
+}
+
+/* ------------------------------------------------------------------------
+Pixels
+------------------------------------------------------------------------ */
+.pixel-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.pixel-grid::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    background-color: #ffffff45;
+    backdrop-filter: blur(5px) saturate(100%) contrast(45%) brightness(130%);
+}
+
+.pixelTile {
+    width: 100%;
+    background-color: #fff;
+    transition: all 0.5s ease-in;
+    aspect-ratio: 1/1;
+}
+
+/* .pixelTile:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+} */
+
+@media only screen and (min-width: 600px) {
+    .pixel-grid {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     }
 }
