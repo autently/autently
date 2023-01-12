@@ -113,6 +113,47 @@ h1 {
 }
 
 /* ------------------------------------------------------------------------
+Footer
+------------------------------------------------------------------------ */
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 99;
+
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    padding: 10px;
+}
+
+.footer-list {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-family: sans-serif;
+}
+
+.footer-list li,
+.footer-list a {
+    font-size: 11px;
+    font-family: sans-serif;
+    color: #0f4621;
+}
+
+.footer-list li#copyright {
+    font-weight: bold;
+}
+
+.footer-list a {
+    text-decoration: none;
+}
+
+/* ------------------------------------------------------------------------
 Pixels
 ------------------------------------------------------------------------ */
 .pixel-grid {
